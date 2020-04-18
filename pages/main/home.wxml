@@ -1,0 +1,11 @@
+
+<view class="container">
+  <view class="center">
+  
+  </view>
+  <view class="tabs" >
+    <view class="name"> {{tab1}}</view>
+    <view class="name"> {{tab2}}</view>
+    <view class="name"> {{tab3}}</view>
+  </view>
+</view>

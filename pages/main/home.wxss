@@ -1,0 +1,11 @@
+/* pages/main/home.wxss */
+.container{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.name{
+  text-shadow: aqua;
+
+}
