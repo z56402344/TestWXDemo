@@ -1,11 +1,37 @@
 /* pages/main/home.wxss */
-.container{
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+.weui-tabbar{position:fixed;bottom:0;left:0;right:0}
+
+.home_msg_item_name{
+  font-size: 25rpx;
 }
 
-.name{
-  text-shadow: aqua;
+.homde_msg_item_msg{
+  font-size: 30rpx;
+}
 
+.weui-cells{
+  display: flex;
+  margin-top: 0rpx;
+  flex-direction: row;
+}
+
+.weui-cells-self{
+  display: flex;
+  flex-direction: row-reverse;
+  right: 0rpx;
+  width: 100%;
+}
+
+.home_msg_item_icon_right{
+  margin-left: 16px;
+  vertical-align: middle;
+  width:20px;
+  height: 20px;
+}
+
+.home_msg_item_icon_left{
+  margin-right: 16px;
+  vertical-align: middle;
+  width:20px;
+  height: 20px;
 }
