@@ -15,7 +15,7 @@ Page({
       url: '../logs/logs'
     })
   },
-  textTap:function(){
+  mottoTap:function(){
     wx.navigateTo({
       url: '../main/home',
     })
@@ -38,31 +38,14 @@ Page({
     } else {
       // 在没有 open-type=getUserInfo 版本的兼容处理
       wx.getUserInfo({
-        complete: (res) => {
-          console.log("complete")
-        },
-        fail: (res) => {},
-        lang: lang,
-        success: (result) => {
-          console.log("success")
+        success: res => {
           app.globalData.userInfo = res.userInfo
           this.setData({
-            userInfo:res.userInfo,
-            hasUserInfo:true
+            userInfo: res.userInfo,
+            hasUserInfo: true
           })
-        },
-        withCredentials: true,
+        }
       })
-      
-      // wx.getUserInfo({
-      //   success: res => {
-      //     app.globalData.userInfo = res.userInfo
-      //     this.setData({
-      //       userInfo: res.userInfo,
-      //       hasUserInfo: true
-      //     })
-      //   }
-      // })
     }
   },
   getUserInfo: function(e) {

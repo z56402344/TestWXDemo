@@ -1,13 +1,25 @@
-//获取应用实例
-const app = getApp()
+// pages/main/home.js
 Page({
+  mixins: [require('../../mixin/themeChanged')],
   data:{
-    pageName:"home.js",
-    tab1:"首页",
-    tab2:"中间",
-    tab3:"我的",
+    msgNum: 3,
+    array: [{
+      userid:'1000',
+      name:'小米',
+      message: 'hello'
+    }, {
+      userid:'1001',
+      name:'小红',
+      message: 'hi'
+    },{
+      userid:'1002',
+      name:'小明',
+      message: '你好'
+    }]
   },
-  onLoad:function(){
-    console.log("onLoad >>> ")
-  }
-})
+  onLoad: function(){
+    this.setData({
+        icon: base64.icon20
+    });
+}
+});
